@@ -74,13 +74,29 @@ Sogo云既有自研客户端，也提供可导入主流代理软件的机场订�
 
 <a id="sogo-speed-test"></a>
 
-## Sogo云VPN线路、流媒体解锁与高峰测速
+## Sogo云VPN线路、流媒体解锁与测速记录
 
 ![Sogo云 拓扑图](https://i.eoht.net/airport/sogo_analyze.webp)
 
 ![Sogo云 流媒体解锁图](https://i.eoht.net/airport/sogo_fulltest.webp)
 
+**历史解锁图说明**：本页已有截图署名 MiaoKo / FFQ.LA，原始提供者未记录。图内时间为 **2026-05-04 16:02:46（CST）**，使用全通量流媒体检测，测试端标注上海 Azure 10Gbps、主端 4.3.3、喵速 4.3.8-Meta，协议为 VLESS。
+
+图中香港02 的 Netflix / Disney+ 标为解锁(HK)，ChatGPT 为失败，Hbo Go 为 N/A；台湾02 的 YouTube 为送中(CN)，Netflix 为解锁(GB)。这些是对应检测项的历史结果，不能简化为所有平台都可用。账号、内容样本与复测次数未记录。
+
 ![Sogo云 上海微软测速图](https://i.eoht.net/airport/sogo_shanghai.webp)
+
+**历史速度记录摘录**：图内时间为 **2026-05-04 16:14:14（CST）**，测试端为上海 Azure 10Gbps、10 线程，工具与协议同图内所示。时间为下午，未记录是否处于拥塞状态，不据此承诺晚高峰表现。
+
+| 节点摘录 | TLS RTT | HTTPS 延迟 | 平均速度（原图） | 最高速度（原图） | UDP 类型 |
+| --- | --- | --- | --- | --- | --- |
+| 香港02 | 41ms | 190ms | 31.55MB | 37.89MB | FullCone |
+| 台湾02 | 53ms | 280ms | 3.99MB | 7.57MB | FullCone |
+| 日本03 | 84ms | 431ms | 59.58MB | 78.24MB | FullCone |
+| 新加坡04 | 82ms | 411ms | 41.65MB | 76.53MB | Unknown |
+| 美国04 | 201ms | 852ms | 55.35MB | 96.13MB | FullCone |
+
+速度按原图保留 MB 标注，不换算为 Mbps；Unknown 保留为未确定的 UDP 类型。测速目标、单节点测试时长和复测次数未记录，这里只是已有截图的文字摘录，不是本次新实测。
 
 <a id="sogo-related-guides"></a>
 
